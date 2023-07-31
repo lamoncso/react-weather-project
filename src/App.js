@@ -24,7 +24,7 @@ export default function App() {
         </a>{" "}
         and{" "}
         <a href="https://app.netlify.com" target="_blank" rel="noreferrer">
-          hosted on Netlify.
+          hosted on Netlify. testtest
         </a>
       </footer>
     </div>
