@@ -16,7 +16,7 @@ export default function App() {
         </a>
         <br /> and is{" "}
         <a
-          href="https://github.com/lamoncso/react-weather-app"
+          href="https://github.com/lamoncso/react-weather-project"
           target="_blank"
           rel="noreferrer"
         >
