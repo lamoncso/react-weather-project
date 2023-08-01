@@ -4,31 +4,44 @@ import "./Weather.css";
 export default function Weather() {
   return (
     <div className="Weather container">
-      <div className="row">
-        <form className="Search-form">
-          <input type="search" placeholder="Enter city..." className="col-5 me-1" />
-            <input type="submit" value="Search" className="col-3" /> 
-        </form>
-      </div>
-      <h1 className="city text-start">New York</h1>
+      <form className="search-form mb-1">
+        <div className="row">
+          <div className="col-9 w-75">
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              className="search-input"
+              autoFocus="on"
+            />
+          </div>
+          <div className="col-3 w-25">
+            {" "}
+            <input type="submit" value="Search" className="search-submit btn btn-primary" />
+          </div>
+        </div>
+      </form>
+    <div className="date">
+      <ul>
+        <li className="description">Cloudy,rainy,shitty</li>
+        <li className="today">Di, 13:00</li>
+      </ul>
+    </div>
       <div className="row">
         <div className="col-6">
           <div className="row">
             <div className="col-3">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                className="img-fluid"
                 alt="description weather"
               />
             </div>
             <div className="col-3 temperature">25</div>
-            <div className="col-3">
-              <div className="row">
-                <div className="col-8">°C</div>
-                <div className="col-4">27°</div>
-              </div>
-              <div className="row">
-                <div className="col-8">F</div>
-                <div className="col-4">16°</div>
+            <div className="col-1">
+              <div className="row unit">
+                <div className="col celsius">°C</div>
+                <span className="split"></span>
+                <div className="col fahrenheit">°F</div>
               </div>
             </div>
           </div>
@@ -40,10 +53,6 @@ export default function Weather() {
             <li>Luftfeuchtigkeit: 34%</li>
           </ul>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-2">description</div>
-        <div className="col-2">Di, 13:00</div>
       </div>
     </div>
   );

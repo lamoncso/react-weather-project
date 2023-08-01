@@ -1,11 +1,78 @@
-.Weather img {
-    max-width: 120px;
+:root{
+    --primary-color: rgb(32, 33, 36);
+    --secondary-color: #70757a;
 }
 
 .Weather {
-    border: 1px solid #e2dddd;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    font-family: "Google Sans", arial, sans-serif;
+    padding: 20px;
+}
+
+.Weather .city{
+    color: var(--primary-color);
+    font-size: 39px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 56px;
+}
+
+.Weather .date ul{
+    margin: 20px 0;
+    padding: 0 !important;
+}
+
+.Weather .description, .today {
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Weather img {
+    max-height: auto;
+}
+
+.Weather .search-input {
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+    padding: 6px 15px;
+}
+
+.Weather .search-submit{
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    width: 100%;
+}
+
+.Weather split {
+    border-bottom: solid 1px var(--secondary-color);
+    margin: 0 4px;
+}
+
+.Weather ul{
+    color: var(--secondary-color);
+    font-size: 14px;
+    line-height: 19px;
+    list-style: none;
+    text-align: start;
+}
+
+.Weather unit{
+    color: var(--secondary-color);
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .Weather .temperature {
-font-size: 47px;
+    color: var(--primary-color);
+    display: inline;
+    font-size: 48px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: normal;
+    line-height: 44px;
 }
