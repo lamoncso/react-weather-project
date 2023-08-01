@@ -1,0 +1,11 @@
+.Weather img {
+    max-width: 120px;
+}
+
+.Weather {
+    border: 1px solid #e2dddd;
+}
+
+.Weather .temperature {
+font-size: 47px;
+}

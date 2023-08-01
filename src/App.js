@@ -1,10 +1,12 @@
 import React from "react";
 import "./App.css";
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
+      <Weather />
       <footer>
         This project was coded by {""}
         <a
@@ -24,7 +26,7 @@ export default function App() {
         </a>{" "}
         and{" "}
         <a href="https://app.netlify.com" target="_blank" rel="noreferrer">
-          hosted on Netlify.
+          hosted on Netlify. 
         </a>
       </footer>
     </div>
