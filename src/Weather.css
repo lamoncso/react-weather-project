@@ -1,6 +1,6 @@
 :root{
-    --primary-color: rgb(32, 33, 36);
-    --secondary-color: #70757a;
+    --primary-color: rgb(107, 111, 125);
+    --secondary-color: #6c8cab;
 }
 
 .Weather {
@@ -8,6 +8,12 @@
     border-radius: 10px;
     font-family: "Google Sans", arial, sans-serif;
     padding: 20px;
+    background-color:#FEFAF7;
+}
+
+.Weather .background {
+    margin-left:92px;
+    margin-top: 24px;
 }
 
 .Weather .city{
@@ -47,6 +53,8 @@
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
     width: 100%;
+    background-color: #e2d7cf;
+    color: #FEFAF7;
 }
 
 .Weather split {

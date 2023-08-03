@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate"
 import "./Weather.css";
+import image from "./img/anya.jpg";
 
 export default function Weather(props) {
 const [weatherData, setWeatherData]=useState({ready:false});
@@ -23,61 +24,74 @@ const [weatherData, setWeatherData]=useState({ready:false});
 
 if (weatherData.ready){
   return (
-    <div className="Weather container">
-      <form className="search-form mb-1">
-        <div className="row">
-          <div className="col-9 w-75">
-            <input
-              type="search"
-              placeholder=" Enter a city..."
-              className="search-input"
-              autoFocus="on"
-            />
-          </div>
-          <div className="col-3 w-25">
-            {" "}
-            <input
-              type="submit"
-              value="Search"
-              className="search-submit btn btn-primary"
-            />
-          </div>
-        </div>
-      </form>
-      <div className="date">
-        <ul>
-          <li className="description text-capitalize">{weatherData.description}</li>
-          <li className="today"><FormattedDate date={weatherData.date} /></li>
-        </ul>
-      </div>
-      <div className="row">
-        <div className="col-6">
+    <div
+      className="Weather container"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+      }}
+    >
+      <div className="background">
+        <form className="search-form mb-1">
           <div className="row">
-            <div className="col-3">
-              <img
-                src={weatherData.iconUrl}
-                className="img-fluid"
-                alt={weatherData.description}
+            <div className="col-9 w-75">
+              <input
+                type="search"
+                placeholder=" Enter a city..."
+                className="search-input"
+                autoFocus="on"
               />
             </div>
-            <div className="col-3 temperature">
-              {Math.round(weatherData.temperature)}
+            <div className="col-3 w-25">
+              {" "}
+              <input
+                type="submit"
+                value="Search"
+                className="search-submit btn btn-primary"
+              />
             </div>
-            <div className="col-1">
-              <div className="row unit">
-                <div className="col celsius">°C</div>
-                <span className="split"></span>
-                <div className="col fahrenheit">°F</div>
+          </div>
+        </form>
+        <div className="date">
+          <ul>
+            <li className="description text-capitalize">
+              {weatherData.description}
+            </li>
+            <li className="today">
+              <FormattedDate date={weatherData.date} />
+            </li>
+          </ul>
+        </div>
+        <div className="row">
+          <div className="col-6">
+            <div className="row">
+              <div className="col-3">
+                <img
+                  src={weatherData.iconUrl}
+                  className="img-fluid"
+                  alt={weatherData.description}
+                />
+              </div>
+              <div className="col-3 temperature">
+                {Math.round(weatherData.temperature)}
+              </div>
+              <div className="col-1">
+                <div className="row unit">
+                  <div className="col celsius">°C</div>
+                  <span className="split"></span>
+                  <div className="col fahrenheit">°F</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-6">
-          <ul>
-            <li>Max temperature: {Math.round(weatherData.tempmax)}°C</li>
-            <li>Wind: {Math.round(weatherData.wind)} km/h</li>
-            <li>Humidity: {Math.round(weatherData.humidity)}%</li>
-          </ul>
+          <div className="col-6">
+            <ul>
+              <li>Max temperature: {Math.round(weatherData.tempmax)}°C</li>
+              <li>Wind: {Math.round(weatherData.wind)} km/h</li>
+              <li>Humidity: {Math.round(weatherData.humidity)}%</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
