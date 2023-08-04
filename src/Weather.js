@@ -6,6 +6,7 @@ import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
 const [weatherData, setWeatherData]=useState({ready:false});
+const [city, setCity] = useState(props.defaultCity);
 
     function handleSubmit(response){
         console.log(response);
@@ -19,8 +20,26 @@ const [weatherData, setWeatherData]=useState({ready:false});
          temperature: response.data.main.temp,
          wind: response.data.wind.speed,
          humidity: response.data.main.humidity,
+         city: response.data.name
        });
     }
+
+function search(){
+const apiKey = "0a521eaf234a3a56f45252fac3c737ad";
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(handleSubmit);
+}
+
+function updateCity(event){
+setCity(event.target.value);
+}
+
+
+function handleSearch(event){
+    event.preventDefault();
+    search();
+}
+
 
 if (weatherData.ready){
   return (
@@ -33,14 +52,15 @@ if (weatherData.ready){
       }}
     >
       <div className="background">
-        <form className="search-form mb-1">
+        <form className="search-form mb-1" onSubmit={handleSearch}>
           <div className="row">
             <div className="col-9 w-75">
               <input
                 type="search"
-                placeholder=" Enter a city..."
+                placeholder="Enter a city..."
                 className="search-input"
                 autoFocus="on"
+                onChange={updateCity}
               />
             </div>
             <div className="col-3 w-25">
@@ -53,16 +73,12 @@ if (weatherData.ready){
             </div>
           </div>
         </form>
-        <WeatherInfo info={weatherData}/>
+        <WeatherInfo info={weatherData} />
         </div>
         </div>
   );
 }else{
-
-const apiKey = "0a521eaf234a3a56f45252fac3c737ad";
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(handleSubmit);
-
+search();
 return("Loading...")
 }
 }

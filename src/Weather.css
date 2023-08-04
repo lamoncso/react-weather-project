@@ -1,12 +1,14 @@
 :root{
-    --primary-color: rgb(107, 111, 125);
-    --secondary-color: #6c8cab;
-}
+    --primary-color: rgb(151, 154, 131);
+    --secondary-color: #98945a;
+    --light-color: rgb(235, 222, 175);
+    --primary-font-family: 'Inconsolata', monospace;
+}   
 
 .Weather {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid rgb(244, 235, 204);
     border-radius: 10px;
-    font-family: "Google Sans", arial, sans-serif;
+    font-family: var(--primary-font-family),"Google Sans", arial, sans-serif;
     padding: 20px;
     background-color:#FEFAF7;
 }
@@ -18,16 +20,17 @@
 
 .Weather .city{
     color: var(--primary-color);
-    font-size: 39px;
+    font-size: 48px;
     font-weight: 400;
+    margin-top: 15px;
     height: auto;
     letter-spacing: normal;
     line-height: 56px;
+    text-align:left;
 }
 
 .Weather .date ul{
     margin: 20px 0;
-    padding: 0 !important;
 }
 
 .Weather .description, .today {
@@ -41,7 +44,9 @@
 }
 
 .Weather .search-input {
-    border: 1px solid var(--secondary-color);
+    background-color: rgb(251, 251, 223);
+    color: var(--secondary-color);
+    border: 1px solid var(--light-color);
     border-radius: 4px;
     position: relative;
     width: 100%;
@@ -49,12 +54,19 @@
 }
 
 .Weather .search-submit{
-    text-align:center;
-    border: 1px solid var(--secondary-color);
+    background-color:yellow;
+    border: 1px solid var(--light-color);
     border-radius: 4px;
     width: 100%;
     background-color: #e2d7cf;
     color: #FEFAF7;
+    margin-left:-30px;
+}
+
+.Weather .search-submit:hover{
+    color: var(--primary-color);
+    border: 1px solid var(--light-color);
+    background-color: #FEFAF7;
 }
 
 .Weather split {
@@ -64,16 +76,17 @@
 
 .Weather ul{
     color: var(--secondary-color);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
     list-style: none;
     text-align: start;
 }
 
-.Weather unit{
-    color: var(--secondary-color);
-    font-size: 12px;
-    line-height: 16px;
+.Weather .unit{
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 23px;
+    margin-left:2px;
 }
 
 .Weather .temperature {
