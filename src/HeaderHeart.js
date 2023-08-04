@@ -5,12 +5,12 @@ export default function HeaderHeart() {
   const [active, setActive] = useState(false);
 
   return (
-    <div style={{ width: "2rem", margin:"0 auto", scale:"1.5" }}>
+    <div  style={{ width: "2rem", margin:"0 auto", scale:"1.5" }}>
       <Heart
         isActive={active}
         onClick={() => setActive(!active)}
         animationTrigger="both"
-        inactiveColor="rgba(255,125,125,.75)"
+        inactiveColor="#ffffff"
         activeColor="#000000"
         style={{ marginTop: "1rem" }}
         animationDuration={0.1}

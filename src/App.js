@@ -2,14 +2,22 @@ import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 import HeaderHeart from "./HeaderHeart";
+import background from "./img/yellowrose.png"
 
 export default function App() {
   return (
+    <div style={{backgroundImage: `url(${background})`,
+                backgroundRepeat:"no-repeat",
+                backgroundSize:"cover",
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                width: '100vw',
+                height: '110vh'}}>  
     <div className="App">
       <HeaderHeart />
       <h1 className="headquote">"If I had a flower for every time I thought of you ... I could walk in my own garden forever"</h1>
       <Weather defaultCity="London" />
-      <p class="mt-2">1966-2023</p>
+      <p class="mt-2 years">1966-2023</p>
       <p></p>
       <footer>
         This project was coded by {""}
@@ -33,6 +41,7 @@ export default function App() {
           hosted on Netlify. 
         </a>
       </footer>
+    </div>
     </div>
   );
 }

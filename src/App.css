@@ -8,11 +8,22 @@
 .App footer{
   font-size:12px;
   margin-top: 10px;
+  color:white;
+}
+
+.App footer a{
+  color:white;
 }
 
 .App .headquote {
+    color: white;
     font-size:18px;
     max-width: 500px;
     margin: 25px auto;
     margin-top:40px;
+}
+
+.App .years {
+  font-size:23px;
+  color: rgb(214, 211, 211);
 }

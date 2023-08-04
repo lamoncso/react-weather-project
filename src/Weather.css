@@ -6,7 +6,6 @@
 }   
 
 .Weather {
-    border: 1px solid rgb(244, 235, 204);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
     font-family: var(--primary-font-family),"Google Sans", arial, sans-serif;
@@ -48,6 +47,7 @@
     position: relative;
     width: 100%;
     padding: 6px 15px;
+    opacity: 0.6;
 }
 
 .Weather .search-submit{
