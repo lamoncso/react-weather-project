@@ -10,3 +10,9 @@
   margin-top: 10px;
 }
 
+.App .headquote {
+    font-size:18px;
+    max-width: 500px;
+    margin: 25px auto;
+    margin-top:40px;
+}
