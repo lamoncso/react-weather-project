@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate"
 import "./Weather.css";
 import image from "./img/anya.jpg";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
 const [weatherData, setWeatherData]=useState({ready:false});
@@ -53,48 +53,9 @@ if (weatherData.ready){
             </div>
           </div>
         </form>
-        <div className="date">
-          <ul>
-            <li className="description text-capitalize">
-              {weatherData.description}
-            </li>
-            <li className="today">
-              <FormattedDate date={weatherData.date} />
-            </li>
-          </ul>
+        <WeatherInfo info={weatherData}/>
         </div>
-        <div className="row">
-          <div className="col-6">
-            <div className="row">
-              <div className="col-3">
-                <img
-                  src={weatherData.iconUrl}
-                  className="img-fluid"
-                  alt={weatherData.description}
-                />
-              </div>
-              <div className="col-3 temperature">
-                {Math.round(weatherData.temperature)}
-              </div>
-              <div className="col-1">
-                <div className="row unit">
-                  <div className="col celsius">°C</div>
-                  <span className="split"></span>
-                  <div className="col fahrenheit">°F</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>Max temperature: {Math.round(weatherData.tempmax)}°C</li>
-              <li>Wind: {Math.round(weatherData.wind)} km/h</li>
-              <li>Humidity: {Math.round(weatherData.humidity)}%</li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </div>
   );
 }else{
 
