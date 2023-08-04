@@ -12,7 +12,8 @@ export default function App() {
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
                 width: '100vw',
-                height: '110vh'}}>  
+                height: '110vh'
+                }}>  
     <div className="App">
       <HeaderHeart />
       <h1 className="headquote">"If I had a flower for every time I thought of you ... I could walk in my own garden forever"</h1>
