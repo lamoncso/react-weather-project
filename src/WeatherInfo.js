@@ -1,32 +1,32 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props){
     return (
-        <div>
-            <div className="row">
-            <div className="col-6">
+      <div>
+        <div className="row">
+          <div className="col-6">
             <h1 className="city">{props.info.city}</h1>
-            </div>
-            <div className="col-6 date">
-          <ul>
-            <li className="description text-capitalize">
-              {props.info.description}
-            </li>
-            <li className="today">
-              <FormattedDate date={props.info.date} />
-            </li>
-          </ul>
-        </div>
+          </div>
+          <div className="col-6 date">
+            <ul>
+              <li className="description text-capitalize">
+                {props.info.description}
+              </li>
+              <li className="today">
+                <FormattedDate date={props.info.date} />
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="row">
           <div className="col-6">
             <div className="row">
-              <div className="col-3">
-                <img
-                  src={props.info.iconUrl}
-                  className="img-fluid"
-                  alt={props.info.description}
+              <div className="col-4 text-start">
+                <WeatherIcon
+                  iconCode={props.info.icon}
+                  alt={props.info.desription}
                 />
               </div>
               <div className="col-3 temperature">

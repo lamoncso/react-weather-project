@@ -40,9 +40,6 @@
     line-height: 20px;
 }
 
-.Weather img {
-    max-height: auto;
-}
 
 .Weather .search-input {
     background-color: rgb(251, 251, 223);
@@ -55,7 +52,6 @@
 }
 
 .Weather .search-submit{
-    background-color:yellow;
     border: 1px solid var(--light-color);
     border-radius: 4px;
     width: 100%;
