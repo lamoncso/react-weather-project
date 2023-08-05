@@ -55,7 +55,7 @@ if (weatherData.ready){
       <div className="background">
         <form className="search-form mb-1" onSubmit={handleSearch}>
           <div className="row">
-            <div className="col-9 w-75">
+            <div className="col-sm-9">
               <input
                 type="search"
                 placeholder="Enter a city..."
@@ -64,7 +64,7 @@ if (weatherData.ready){
                 onChange={updateCity}
               />
             </div>
-            <div className="col-3 w-25">
+            <div className="col-sm-3">
               {" "}
               <input
                 type="submit"

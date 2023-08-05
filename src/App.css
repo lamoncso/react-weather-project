@@ -27,3 +27,15 @@
   font-size:23px;
   color: rgb(214, 211, 211);
 }
+
+@media(max-width:400px){
+.App .headquote {
+    font-size:14px;
+    max-width: 390px;
+}
+
+.App .years {
+  font-size:18px;
+}
+
+}

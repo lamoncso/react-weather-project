@@ -120,20 +120,40 @@
         max-width:360px;
         margin: auto
     }
-   .Weather .temperature{
-        margin-right:10px;
-        margin-left:22px;
+
+    .Weather .city{
+        font-size:35px;
+        margin-left:47px;
     }
 
-    .Weather img {
-    min-width: 48px;
-}
+    .Weather ul.date{
+        margin-top:-10px!important;
+        line-height: 24px;
+        margin-left: 15px!important;
 
-    .Weather .search-input {
+    }
+
+    .Weather canvas{
+        margin-left:53px;
+        margin-top:6px;
+        max-width:45px;
+    }
+
+   .Weather .temperature{
+        text-align:end;
+        margin-right:10px;
+        margin-left:50px;
+        font-size:35px;
+    }
+
+    
+.Weather .search-input {
     position: relative;
     width: 100%;
     padding: 3px 2px;
     font-size: 16px;
+    max-width:150px;
+    margin-right:-33px;
 }
 
 .Weather .search-submit{
@@ -141,5 +161,29 @@
     text-align:center;
     border-radius: 4px;
     padding: 3px 2px;
+    margin-left:1px;
+    margin-top:5px;
+    max-width:150px;
+    margin-right:-33px;
 }
+
+.Weather .unit{
+    color: var(--primary-color);
+    font-size: 13px;
+    line-height: 0px;
+    position: relative;
+    top:-14px;
+}
+
+.Weather .fahrenheit{
+    position:relative;
+    left:0;
+}
+
+.Weather .weather-data ul{
+    margin-top:-10px;
+    line-height: 19px;
+    margin-left: -14px;
+}
+
 }
