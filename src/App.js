@@ -25,7 +25,7 @@ export default function App() {
         </h1>
         <Weather defaultCity="Mór" />
         <p class="mt-2 years">1966-2023</p>
-        <p></p>
+        <Pictures />
         <div className="foto">
           <img
             src={Pictures.foto01}
