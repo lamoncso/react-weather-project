@@ -1,16 +1,16 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 import image from "./img/anya.jpg";
-import WeatherInfo from "./WeatherInfo";
+
 
 export default function Weather(props) {
 const [weatherData, setWeatherData]=useState({ready:false});
 const [city, setCity] = useState(props.defaultCity);
 
     function handleSubmit(response){
-        console.log(response);
-        
+      console.log(response);
        setWeatherData({
          ready: true,
          date: new Date(response.data.dt*1000),
@@ -24,20 +24,21 @@ const [city, setCity] = useState(props.defaultCity);
        });
     }
 
-function search(){
-const apiKey = "0a521eaf234a3a56f45252fac3c737ad";
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(handleSubmit);
-}
-
-function updateCity(event){
-setCity(event.target.value);
-}
-
 
 function handleSearch(event){
     event.preventDefault();
     search();
+}
+
+function updateCity(event) {
+  setCity(event.target.value);
+}
+
+
+function search() {
+  const apiKey = "0a521eaf234a3a56f45252fac3c737ad";
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleSubmit);
 }
 
 
