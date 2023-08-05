@@ -83,9 +83,19 @@
     font-size: 16px;
     line-height: 23px;
     margin-left:2px;
+    position: relative;
+    top:-20px;
+}
+
+
+.Weather .fahrenheit{
+    position: relative;
+    right: -25px;
+    top: -25px;
 }
 
 .Weather .temperature {
+    margin-left:10px;
     color: var(--primary-color);
     display: inline;
     font-size: 48px;
