@@ -10,7 +10,6 @@ export default function App() {
                 backgroundRepeat:"no-repeat",
                 backgroundSize:"cover",
                 backgroundPosition: 'center',
-                backgroundSize: 'cover',
                 width: '100vw',
                 height: '110vh'
                 }}>  
