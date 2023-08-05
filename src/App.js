@@ -3,45 +3,65 @@ import "./App.css";
 import Weather from "./Weather";
 import HeaderHeart from "./HeaderHeart";
 import background from "./img/yellowrose.png"
+import Pictures from "./Pictures"
 
 export default function App() {
   return (
-    <div style={{backgroundImage: `url(${background})`,
-                backgroundRepeat:"no-repeat",
-                backgroundSize:"cover",
-                backgroundPosition: 'center',
-                width: '100vw',
-                height: '110vh'
-                }}>  
-    <div className="App">
-      <HeaderHeart />
-      <h1 className="headquote">"If I had a flower for every time I thought of you ... I could walk in my own garden forever"</h1>
-      <Weather defaultCity="Mór" />
-      <p class="mt-2 years">1966-2023</p>
-      <p></p>
-      <footer>
-        This project was coded by {""}
-        <a
-          href="https://codefusion-ml.netlify.app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Monika Lauko
-        </a>
-        <br /> and is{" "}
-        <a
-          href="https://github.com/lamoncso/react-weather-project"
-          target="_blank"
-          rel="noreferrer"
-        >
-          open-sourced on GitHub
-        </a>{" "}
-        and{" "}
-        <a href="https://app.netlify.com" target="_blank" rel="noreferrer">
-          hosted on Netlify. 
-        </a>
-      </footer>
-    </div>
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        width: "100vw",
+        height: "110vh",
+      }}
+    >
+      <div className="App">
+        <HeaderHeart />
+        <h1 className="headquote">
+          "If I had a flower for every time I thought of you ... I could walk in
+          my own garden forever"
+        </h1>
+        <Weather defaultCity="Mór" />
+        <p class="mt-2 years">1966-2023</p>
+        <p></p>
+        <div className="foto">
+          <img src={Pictures.foto01} className="img-section" />
+          <img src={Pictures.foto02} className="img-section" />
+          <img src={Pictures.foto03} className="img-section" />
+          <img src={Pictures.foto04} className="img-section" />
+          <img src={Pictures.foto05} className="img-section" />
+          <img src={Pictures.foto06} className="img-section" />
+          <img src={Pictures.foto07} className="img-section" />
+          <img src={Pictures.foto08} className="img-section" />
+          <img src={Pictures.foto09} className="img-section" />
+          <img src={Pictures.foto10} className="img-section" />
+          <img src={Pictures.foto11} className="img-section" />
+        </div>
+        <footer>
+          This project was coded by {""}
+          <a
+            href="https://codefusion-ml.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Monika Lauko
+          </a>
+          <br /> and is{" "}
+          <a
+            href="https://github.com/lamoncso/react-weather-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a href="https://app.netlify.com" target="_blank" rel="noreferrer">
+            hosted on Netlify.
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }

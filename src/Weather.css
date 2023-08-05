@@ -100,7 +100,7 @@
 
 .Weather .fahrenheit{
     position: relative;
-    right: -5px;
+    right: -30px;
     top: -25px;
 }
 
@@ -115,7 +115,7 @@
     line-height: 44px;
 }
 
-@media(max-width:400px){
+@media(max-width:575px){
     .Weather {
         max-width:360px;
         margin: auto
