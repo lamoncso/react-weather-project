@@ -3,7 +3,6 @@ import "./App.css";
 import Weather from "./Weather";
 import HeaderHeart from "./HeaderHeart";
 import background from "./img/yellowrose.png"
-import Pictures from "./Pictures"
 
 export default function App() {
   return (
