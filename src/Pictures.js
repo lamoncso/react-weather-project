@@ -8,7 +8,7 @@ import foto07 from "./img/07.jpeg";
 import foto08 from "./img/08.jpg";
 import foto10 from "./img/10.jpg";
 
-export default {
+export default function Pictures(){
   foto01: foto01,
   foto02: foto02,
   foto03: foto03,
@@ -19,3 +19,4 @@ export default {
   foto08: foto08,
   foto10: foto10,
 };
+
