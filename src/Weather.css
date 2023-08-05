@@ -82,7 +82,7 @@
     color: var(--primary-color);
     font-size: 16px;
     line-height: 23px;
-    margin-left:2px;
+    margin-left:10px;
     position: relative;
     top:-20px;
 }
@@ -100,7 +100,7 @@
 
 .Weather .fahrenheit{
     position: relative;
-    right: -25px;
+    right: -5px;
     top: -25px;
 }
 
