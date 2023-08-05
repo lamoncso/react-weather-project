@@ -8,10 +8,10 @@ export default function WeatherInfo(props){
       <div>
         <div className="row">
           <div className="col-sm-6">
-            <h1 className="city">{props.info.city}</h1>
+            <h1 className="city mt-3">{props.info.city}</h1>
           </div>
           <div className="col-sm-6">
-            <ul className="date">
+            <ul className="date mt-4">
               <li className="description text-capitalize">
                 {props.info.description}
               </li>
