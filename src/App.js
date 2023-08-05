@@ -25,64 +25,7 @@ export default function App() {
         </h1>
         <Weather defaultCity="Mór" />
         <p class="mt-2 years">1966-2023</p>
-        <Pictures />
-        <div className="foto">
-          <img
-            src={Pictures.foto01}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto02}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto03}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto04}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto05}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto06}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto07}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto08}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto09}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto10}
-            className="img-section"
-            alt="in progress"
-          />
-          <img
-            src={Pictures.foto11}
-            className="img-section"
-            alt="in progress"
-          />
-        </div>
+       
         <footer>
           This project was coded by {""}
           <a
