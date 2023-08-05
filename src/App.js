@@ -16,7 +16,7 @@ export default function App() {
     <div className="App">
       <HeaderHeart />
       <h1 className="headquote">"If I had a flower for every time I thought of you ... I could walk in my own garden forever"</h1>
-      <Weather defaultCity="London" />
+      <Weather defaultCity="Mór" />
       <p class="mt-2 years">1966-2023</p>
       <p></p>
       <footer>
