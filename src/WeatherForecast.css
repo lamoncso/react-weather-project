@@ -1,0 +1,20 @@
+:root{
+    --primary-color: rgb(151, 154, 131);
+    --secondary-color: #98945a;
+    --light-color: rgb(235, 222, 175);
+    --primary-font-family: 'Inconsolata', monospace;
+}   
+
+
+.WeatherForecast {
+    color:var(--secondary-color);
+    font-size: 16px;
+    line-height: 19px;
+    font-family: var(--primary-font-family);
+    text-align: center; 
+}
+
+.WeatherForecast .forecast-icon canvas {
+    color: var(--secondary-color);
+    margin: 5px auto;
+}

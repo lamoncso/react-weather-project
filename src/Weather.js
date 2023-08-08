@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 import image from "./img/anya.jpg";
@@ -13,6 +14,7 @@ const [city, setCity] = useState(props.defaultCity);
       console.log(response);
        setWeatherData({
          ready: true,
+         coordinates: response.data.coord,
          date: new Date(response.data.dt*1000),
          description: response.data.weather[0].description,
          icon: response.data.weather[0].icon,
@@ -74,7 +76,8 @@ if (weatherData.ready){
             </div>
           </div>
         </form>
-        <WeatherInfo info={weatherData} />
+        <WeatherInfo info={weatherData}/>
+        <WeatherForecast coordinates={weatherData.coordinates}/>
         </div>
         </div>
   );

@@ -33,6 +33,7 @@
 }
 
 @media(max-width:400px){
+
 .App .headquote {
     font-size:14px;
     max-width: 390px;

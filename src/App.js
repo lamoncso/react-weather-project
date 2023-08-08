@@ -9,7 +9,7 @@ export default function App() {
     <div
       style={{
         backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
+       
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100vw",

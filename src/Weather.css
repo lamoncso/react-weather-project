@@ -18,9 +18,11 @@
     margin-top: 24px;
 }
 
+
 .Weather .city{
+    text-align: center!important;
     color: var(--primary-color);
-    font-size: 48px;
+    font-size: var;
     font-weight: 400;
     margin-top: 15px;
     height: auto;
@@ -114,6 +116,16 @@
     height: auto;
     letter-spacing: normal;
     line-height: 44px;
+}
+
+
+.Weather canvas {
+    margin-left:10px;
+}
+
+.Weather .current-icon-temperature {
+    position: relative;
+    left: 57px;
 }
 
 @media(max-width:575px){
