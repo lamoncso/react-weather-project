@@ -7,7 +7,7 @@ import image from "./img/anya.jpg";
 
 
 export default function Weather(props) {
-const [weatherData, setWeatherData]=useState({ready:false});
+const [weatherData, setWeatherData]=useState({ ready:false });
 const [city, setCity] = useState(props.defaultCity);
 
     function handleSubmit(response){
@@ -83,7 +83,7 @@ if (weatherData.ready){
   );
 }else{
 search();
-return("Loading...")
+return("Loading...");
 }
 }
 
