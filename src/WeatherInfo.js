@@ -38,7 +38,6 @@ export default function WeatherInfo(props){
           </div>
           <div className="col-sm-6 weather-data">
             <ul>
-              <li>Max temperature: {Math.round(props.info.tempmax)}°C</li>
               <li>Wind: {Math.round(props.info.wind)} km/h</li>
               <li>Humidity: {Math.round(props.info.humidity)}%</li>
             </ul>

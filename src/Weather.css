@@ -41,6 +41,10 @@
     line-height: 20px;
 }
 
+.Weather .description{
+    margin-top:31px;
+}
+
 .Weather .search-input {
     background-color: rgb(251, 251, 223);
     color: var(--secondary-color);
