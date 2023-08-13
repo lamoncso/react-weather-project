@@ -113,6 +113,13 @@
     left: 57px;
 }
 
+@media(max-width:770px){
+    .Weather .search-submit{
+    max-width: 200px;
+
+}
+}
+
 @media(max-width:575px){
     .Weather {
         max-width:360px;
