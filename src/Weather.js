@@ -11,7 +11,6 @@ const [weatherData, setWeatherData]=useState({ ready:false });
 const [city, setCity] = useState(props.defaultCity);
 
     function handleSubmit(response){
-      console.log(response);
        setWeatherData({
          ready: true,
          coordinates: response.data.coord,

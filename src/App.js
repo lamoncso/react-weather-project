@@ -9,7 +9,6 @@ export default function App() {
     <div
       style={{
         backgroundImage: `url(${background})`,
-       
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100vw",
@@ -23,7 +22,7 @@ export default function App() {
           my own garden forever"
         </h1>
         <Weather defaultCity="Mór" />
-        <p class="mt-2 years">1966-2023</p>
+        <p className="mt-2 years">1966-2023</p>
        
         <footer>
           This project was coded by {""}

@@ -26,6 +26,9 @@ let [forecast, setForecast] = useState(null);
               <WeatherForecastDay data={dailyForecast} />
              </div>
               );}
+              else{
+                return null;
+              }
             })}
              
            </div>
