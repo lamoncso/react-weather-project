@@ -47,6 +47,7 @@
 
 .Weather .search-input {
     background-color: rgb(251, 251, 223);
+    border-radius:12px;
     color: var(--secondary-color);
     border: 1px solid var(--light-color);
     border-radius: 4px;
@@ -60,7 +61,7 @@
 
 .Weather .search-submit{
     border: 1px solid var(--light-color);
-    border-radius: 4px;
+    border-radius:12px;
     width: 100%;
     background-color: #D6C8A1;
     color: #FEFAF7;
@@ -71,11 +72,6 @@
     color: var(--primary-color);
     border: 1px solid var(--light-color);
     background-color: #FEFAF7;
-}
-
-.Weather split {
-    border-bottom: solid 1px var(--secondary-color);
-    margin: 0 4px;
 }
 
 
@@ -94,23 +90,6 @@
     margin-left:10px;
     position: relative;
     top:-20px;
-}
-
-.Weather .unit a {
-    text-decoration:none;
-    color: #d4d4a8;
-}
-
-.Weather .unit a:hover {
-    color: #adad82;
-    font-size:18px;
-    transition: all 100ms ease-in-out;
-}
-
-.Weather .fahrenheit{
-    position: relative;
-    right: -30px;
-    top: -25px;
 }
 
 .Weather .temperature {
@@ -141,49 +120,56 @@
     }
 
     .Weather .city{
-        font-size:35px;
-        margin-left:47px;
+        margin-top:0px!important;
+        font-size:var(calc);
+        text-align:end!important;       
+    }
+
+    .Weather .description{
+        margin-top:0!important;
     }
 
     .Weather ul.date{
         margin-top:-10px!important;
         line-height: 24px;
         margin-left: 15px!important;
+        text-align:end;
 
     }
 
     .Weather canvas{
-        margin-left:53px;
-        margin-top:6px;
         max-width:45px;
+        
+    }
+
+    .Weather .current-icon-temperature{
+        margin-right: 15px;
     }
 
    .Weather .temperature{
         text-align:end;
-        margin-right:10px;
-        margin-left:50px;
         font-size:35px;
     }
 
     
 .Weather .search-input {
+    text-align: center;
     position: relative;
     width: 100%;
     padding: 3px 2px;
     font-size: 16px;
-    max-width:150px;
-    margin-right:-33px;
+    margin-left:auto;
+    border-radius:12px;
 }
 
 .Weather .search-submit{
     font-size: 16px;
     text-align:center;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 3px 2px;
     margin-left:1px;
     margin-top:5px;
-    max-width:150px;
-    margin-right:-33px;
+
 }
 
 .Weather .unit{
@@ -192,17 +178,21 @@
     line-height: 0px;
     position: relative;
     top:-14px;
-}
-
-.Weather .fahrenheit{
-    position:relative;
-    left:0;
+    text-align:end;
 }
 
 .Weather .weather-data ul{
-    margin-top:-10px;
     line-height: 19px;
-    margin-left: -14px;
+    text-align:end;
+    margin-bottom:-8px;
+}
+
+.Weather .weather-data{
+    background-color: white;
+    opacity: 0.8;
+     padding: 12px 5px;
+    border-radius:25px;
+    margin: 2px;
 }
 
 }
