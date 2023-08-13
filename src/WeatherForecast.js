@@ -16,9 +16,15 @@ let [forecast, setForecast] = useState(null);
     if (loaded){
          return (
            <div className="row WeatherForecast">
-             <div className="col">
-              <WeatherForecastDay data={forecast[0]} />
+            {forecast.map(function (dailyForecast,index){
+              if(index<5){
+              return(
+            <div className="col" key={index}>
+              <WeatherForecastDay data={dailyForecast} />
              </div>
+              );}
+            })}
+             
            </div>
          );
 
@@ -26,7 +32,7 @@ let [forecast, setForecast] = useState(null);
 
         let longitude = props.coordinates.lon;
         let latitude = props.coordinates.lat;
-        let apiKey = "64469ac67e6dc941feb5b50915a18dc7";
+        let apiKey = "6f578b96aa9505bcce148ac22cb85794";
         let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
         axios.get(apiUrl).then(handleResponse);
