@@ -20,7 +20,7 @@
 
 
 .Weather .city{
-    text-align: center!important;
+    text-align:right;
     color: var(--primary-color);
     font-size: var;
     font-weight: 400;
@@ -28,7 +28,6 @@
     height: auto;
     letter-spacing: normal;
     line-height: 56px;
-    text-align:left;
 }
 
 .Weather .date ul{
